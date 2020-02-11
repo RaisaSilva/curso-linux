@@ -1,0 +1,9 @@
+cp : Permite copiar archivos y directorios.
+rm : Con rm podemos eliminar archivos.
+mv : Este comando sirve para mover un fichero a un directorio y poder cambiar
+ el nombre del archivo
+mkdir : Podemos crear un nuevo archivo  
+rmdir : Con este comando podemos borrar el directorio 
+touch : Con este comando podemos crear archivos.
+ls : Listado de archivos existentes 
+
