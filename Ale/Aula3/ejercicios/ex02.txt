@@ -1,0 +1,11 @@
+1. Redireccionar salida de comando ls para arquivo.txt
+
+   ls > archivo.txt
+
+2. Redireccionar salida archivo.txt para el comando sort
+
+   sort < archivo.txt
+
+3. Redireccionar archivo.txt para el comando sort y la salida de ese comando para resultado.txt
+
+   sort < archivo.txt > resultado.txt
