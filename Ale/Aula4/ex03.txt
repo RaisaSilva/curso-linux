@@ -1,0 +1,46 @@
+
+1.¿Cómo se llama su máquina?
+
+	MacBook-Pro-de-Raisa.local
+
+2.¿Cuál es la fecha y hora del sistema?
+
+	Fri Feb 14 07:55:41 -04 2020
+
+3.¿En qué ruta está el comando cp?
+
+	/bin/cp
+
+4.Intente adaptar los 10 ejemplos de usos del comando find para buscar archivos en su hogar (https://e-tinet.com/linux/comando-find-linux/)
+
+	comando desde donde te encuentras: find .
+	comando indicando donde quieres buscar: find ./ejemplo.txt
+	
+	Para especificar el limite de directorios: find ./curso -maxdepth 1 (este 1 indica el número de capas) -name *.php
+
+	Multiples criterios de busca: find ./curso -name 'ex*' ! -name '*.txt'
+
+	Localizar los archivos de cierto directorio: find ./archivo1 -name ejemplo*
+	Localizar solo archivos: find ./curso -type f -name "curso*"
+	Localizar solo directorios: find ./curso -type d -name "directoriode*"
+	
+	Para localizar archivos ocultos: find - -type f -name ".*"
+
+	Para encontrar archivos con determinados permisos: find . -type f -perm 0740
+
+	Encontrar archivos con base a ciertos propietarios: find . -user raisa
+
+	Localizar archivos que pertencen a un grupo: find /var/www - group cursop_linux
+	Encontrar archivos de acuerdo a los periodos de modificación: find / -atime 5 o find / -mtime +30 -mtime -90
+
+	Localizar los archivos con base de su tamaño: find / -size 40M
+
+5.Vaya a / home / course e intente encontrar todos los archivos con una extensión .txt en todos los subdirectorios utilizando el comando find (consulte el manual)
+
+	Comando: find . -name *.txt
+	Este comando nos mostrará todos los archivos que terminen en .txt desde
+	el archivo en el que me encuetro y especificando la ruta. 
+ 
+6.Intente usar el comando find con la opción exec para eliminar archivos con la extensión .so en / home / curso / so-and-so (los creó en la clase 2)
+
+	 comando para eliminar archivos: find . -name '*i1.so' -exec rm {} \; 

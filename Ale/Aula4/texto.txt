@@ -1,0 +1,23 @@
+CABLE DE RED CRUZADO
+El cable cruzado se utiliza para conectar dispositivos del mismo tipo:
+Computadora a computadora
+Router a router por medio de la interfaz Ethernet
+Switch a switch
+Computadora a router por medio de la interfaz Ethernet
+Un cable cruzado es aquel donde en los extremos la configuración es diferente. El cable cruzado, como su nombre lo dice, cruza las terminales de transmisión de un lado para que llegue a recepción del otro, y la recepción del origen a transmisión del final.
+
+Para crear el cable de red cruzado, lo único que deberá hacer es ponchar un extremo del cable con la norma T568A y el otro extremo con la norma T568B. Con este cable se puede transmitir directamente a través de dos dispositivos conectados …ver más… 
+Esto quiere decir, que si utilizaste la norma T568A en un extremo del cable, en el otro extremo también debes aplicar la misma norma T568A.
+
+CATEGORÍAS DEL CABLE UTP
+
+Cada categoría especifica unas características eléctricas para el cable: atenuación, capacidad de la línea e impedancia. En Noviembre de 1991, la EIA/TIA 568 define las siguientes categorías de cable: Categoría 3 hasta 16MHz, Categoría 4 hasta 20 MHz y la Categoría 5, hasta 100MHz.
+
+CATEGORÍA 1
+Esta categoría consiste del cable básico de telecomunicaciones y energía de circuito limitado. . Alcanzan como máximo velocidades de hasta 4 Mbps
+
+CATEGORÍA 2 consiste de los cables normalizados a 1 MHz
+También empleado para transmisión de voz y datos hasta 4Mbps.
+
+CATEGORÍA 3
+Esta es la designación del cable de par trenzado y elementos de conexión los cuales en base al desempeño pueden soportar frecuencias de transmisión hasta 16 MHz y MHz y una velocidad de transmisión de datos de 10mbps.
