@@ -1,0 +1,99 @@
+
+Usando el comando ps para saber:
+
+1. ¿Qué procesos o usuarios esta en curso?
+
+	Podemos ver todos los procesos que estan en curso con el comando 
+	ps -a (lista todos los procesos de topdos los usuarios)
+	ps -x (lista todos los procesos de todas las terminales y usuarios)
+
+2. ¿Qué procesos todos los usuarios estan en curso?
+
+	Con el comando podemos ps aux, este comando lista los procesos 
+	de todos los usuarios con información añadida.
+
+3. Abra  e indique cual es su PID
+	
+	Con el comando: open -a Safari
+	PID:13977	
+
+4. Matar con el comando kill
+	
+	comando: kill 13977
+
+5. Abra un gedit via linea de comando y coloque en background con CTRL/Z	bg <enter>
+	
+	Una vez que cree un editor de texto prueba, se ingresa 
+ 	el comando CTRL/Z y apareció este mensaje.
+
+	[1]+  Stopped                 vi prueba
+	
+6. Cree un gedit de nuevo para foreground con fg
+
+	comando: fg prueba
+
+7. Use top para determinar que procesos estan consumiendo mas recursos
+	
+	Una vez que ya estemos en top, se debe ingresar M para que se ordene la columna
+	de Memory de forma descendente
+
+8.Use man top para entender todo lo que lista
+
+	Nos muestra en tiempo real un resumen de todo los procesos que se encuentran 
+	ejecutando, procesos dormidos, procesos detenidos, procesos que no estan siendo
+	ejecutados, estados del CPU, memoria física, memoria virtual.
+
+	En la pantalla que nos muestra esta dividida en columnas, una de las mas
+	importantes son las llaves de los procesos: PID.
+
+
+9.Mata algunos procesos no esenciales con las teclas y tecla "k"
+
+
+10. Ingrese el contenido a continuación y guárdelo.
+
+		#!/bin/bash
+		echo "Starting the Infinite Process"
+		while [ 1 ] 
+		do
+		sleep 60
+		echo "Inside the loop that will go forever" 
+		done
+
+11. Cambia los permisos de archivo para otorgar permiso de EJECUTAR a forever.sh.
+
+	Se logró cambiar los permisos con el comando: chmod ugo-rw forever.sh y 
+	chmod ugo+x forever.sh
+	
+12.Ejecute el script con ./forever.sh
+
+	Pon el guión en segundo plano
+
+	MacBook-Pro-de-Raisa:Aula4 raisasilva$ ./forever.sh
+	Starting the Infinite Process
+	bg
+	^Z
+	[1]+  Stopped                 ./forever.sh
+	MacBook-Pro-de-Raisa:Aula4 raisasilva$ bg
+	[1]+ ./forever.sh &
+
+
+13.Intenta encontrarlo con ps
+	
+	 PID TTY           TIME CMD
+	15358 ttys002    0:00.01 /bin/bash ./forever.sh
+
+14. Matar el proceso con el comando kill
+
+	MacBook-Pro-de-Raisa:Aula4 raisasilva$ kill 15358
+	[1]+  Terminated: 15          ./forever.sh
+
+
+15.Ejecútelo nuevamente con nohup y un & (y comercial) al final de la línea	
+
+	MacBook-Pro-de-Raisa:Aula4 raisasilva$ nohup ./forever.sh &
+	[1] 15374
+
+16.Cierre la terminal y ábrala nuevamente. ¿El proceso forever.sh continúa ejecutándose?
+
+	Si y pude confirmar que se  sigue ejecutando con el comando: ps -e
